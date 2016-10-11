@@ -27,7 +27,7 @@ scenic_kproc *kproc_cache[MAX_PROCS] = {0};
 
 int kproc_init(void)
 {
-	bool is_n3ds;
+	u8 is_n3ds; //gcc doesn't wanted the boolean type to be here
 	Result res;
 
 	res = aptInit();
